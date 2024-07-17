@@ -12,6 +12,7 @@
 - [Limitations](#limitations)
 
 ### Project Overview
+---
 
 British Airways, like many airlines, captures a wealth of data on its flights.  This project aimed to leverage this data to improve two key areas: operational efficiency and customer satisfaction.
 
@@ -26,15 +27,20 @@ To achieve this, I embarked on a deep dive into the provided British Airways fli
 By answering these questions and more, I aimed to identify opportunities to optimize flight schedules, reduce costs, and ultimately enhance the travel experience for our customers.
 
 ### Data Source
+---
 
 The primary data source used for this Analysis was gotten from British Flight Data source via https://drive.google.com/file/d/1CNHQuwyWB6v1YPNZAqzA5R46u2hiQfVd/view
 
 ### Tools
+---
+
 - EXCEL: Used for Data cleaning [Download Here](https://www.microsoft.com/en-us/microsoft-365/excel)
 - SQL SERVER: Used for Data Analysis [Download Here](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - POWER BI: Used for Creating a report and visualization [Download Here](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
 
 ### Data Cleaning And Preparations
+---
+
 I performed the following task at the initial phase of the data preparation
 - Data downloading and inspection/studying
 - Handling missing data
@@ -42,6 +48,8 @@ I performed the following task at the initial phase of the data preparation
 - Data cleaning and formatting
 
 ### Exploratory Data Analysis
+---
+
 This involved exploring the flight data to answer key questions like;
 
 1. Which manufacturer has the best aircrafts in terms of fuel efficiency?
@@ -52,6 +60,8 @@ This involved exploring the flight data to answer key questions like;
 6. What is the average number of passengers like for each month?
 
 ### Data Analysis
+---
+
 My analysis was done on SQL server with some of the following codes: These codes answers question 1,3,5 respectively
 
 ```sql
@@ -96,6 +106,8 @@ GROUP BY TO_CHAR(bf.actual_flight_date,'Month'),EXTRACT (MONTH FROM bf.actual_fl
 ORDER BY EXTRACT (MONTH FROM bf.actual_flight_date);
 ```
 ### Results And Findings
+---
+
 The Analysis results are summarised as follows:
 1. It was established that Mitsubishi Manufacturer has the best aircraft in terms of fuel efficiency although it's not frequently used.
 2. OBSERVATION: Although Mitsubishi aircraft Manufacturer has the best fuel efficiency, However, Boeing aircraft Manufacturer is topping the list of being used more frequently
@@ -110,10 +122,14 @@ The Analysis results are summarised as follows:
  - INSIGHT: Although June data record only stopped at half of the month, this could be one of the reasons why it's having the lowest Avg. number of passengers
 
 ### Recommendations
+---
+
 - Other Manufacturers should dig deep(maybe create a market survey,Questionnaires)to find out the market secret of Boeing aircraft and other competitors and create room for improvement
 - Because people love discount, perphaps some discount or incentives should be applied to each manufacturers aircraft to attract traffic to the manufacturer.
 
 ### Limitations
+---
+
 - The absence of incomplete data for the month of June limited the scope of our analysis and prevented a complete quarterly evaluation
 
  
